@@ -5,6 +5,9 @@ SHELL = /bin/bash
 env : 
 	source /srv/conda/.condarc
 	conda env update -f environment.yml
+	conda activate ligo
+	conda install ipykernel
+	python -m ipykernel install --user --name make-env --display-name "IPython - LIGO"
 
 .PHONY : html
 html :
