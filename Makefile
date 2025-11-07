@@ -7,7 +7,9 @@ env :
 	conda env update -f environment.yml
 	conda activate ligo
 	conda install ipykernel
-	python -m ipykernel install --user --name make-env --display-name "IPython - LIGO"
+	cd ligotools
+	pip install .
+	python -m ipykernel install --user --name ligo-env --display-name "IPython - LIGO"
 
 .PHONY : html
 html :
