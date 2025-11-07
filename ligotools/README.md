@@ -1,0 +1,1 @@
+This is a small helper package for this notebook. It is based on the work of the Ligo Scientific Collaboration (LSC). You can find out more about how it is used in this project in the main README.
