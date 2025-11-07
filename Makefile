@@ -8,5 +8,5 @@ create_environment :
 .PHONY : clean
 clean : 
 	rm -f audio/*
-	rm -f data/*
+	rm -f data/*.csv
 	rm -f figures/*
