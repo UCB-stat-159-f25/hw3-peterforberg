@@ -1,0 +1,8 @@
+ligotools/ligotools.egg-info/
+ligotools/build/
+data/*.csv
+**.ipynb_checkpoints
+hw03_description.md
+# MyST build outputs
+_build
+
