@@ -1,9 +1,14 @@
 .ONESHELL:
 SHELL = /bin/bash
 
-create_environment :
+.PHONY : env
+env : 
 	source /srv/conda/.condarc
-	conda env update -f environment.yml 
+	conda env update -f environment.yml
+
+.PHONY : html
+html :
+	myst build --html
 
 .PHONY : clean
 clean : 
